@@ -1,0 +1,240 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+background-color:whitesmoke;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background-color: whitesmoke;
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex end;
+  align-items: center;
+  position: fixed;
+  color: black;
+    }
+    header h1{
+        padding-left: 60px;
+    }
+nav{
+    display: flex;
+    flex-direction: row;
+}
+nav li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+nav li a:hover{
+    background-color: #92a8d1;
+    transition: ease-in 0.2s;
+    padding: 5px;
+    border-radius: 5px;
+}
+.leftnav{
+    position: relative;
+    left: 50px;
+    top: 0px;
+}
+.rightnav{
+    float: right;
+    margin-top: 0px;
+    margin-left: auto;
+}
+#welcome {
+    background-image: url(Background.jpg);
+    background-size: 210vh;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    color: whitesmoke;
+    text-align: center;
+    font-size: ;
+}
+#welcome p{
+    padding-top: 250px;
+    padding-right: 400px;
+}
+#welcome h2 {
+    padding-right: 400px;
+}
+#featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    align-items: baseline;
+    height: 80vh;
+    
+    width: 100%;   
+}
+#headd1 {
+grid-area: 1/1/2/5;
+justify-self: center;
+padding-top: 20px;
+column-gap: 0;
+}
+#headd1 p {
+    text-align: center;
+    background-color: #92a8d1;
+    border-radius: 5px;
+}
+.children {
+     padding-left: 50px; 
+}
+.children p {
+    text-align: center;
+    background-color:#92a8d1;
+    border-radius: 5px;
+    width: 250px;
+    
+}
+
+img{
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+}
+#retro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+#headd {
+    grid-area: 1/1/2/5;
+    justify-self: center;
+    padding-top: 20px;
+    column-gap: 0;
+    }
+#headd p {
+    text-align: center;
+    background-color: #92a8d1;
+    border-radius: 5px;
+}
+
+.children2 {
+    padding-left: 50px; 
+}
+
+.children2 p {
+    text-align: center;
+    background-color:#92a8d1;
+    border-radius: 5px;
+    width: 250px;
+    
+}
+#concept {
+    padding-top: 30px;
+}
+#concept-text {
+    text-align: justify;
+    position: absolute;
+    padding-left: 600px;
+}
+.img-div {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 170px;
+}
+#conceptimg {
+    height: 500px;
+    width: 450px;
+}
+.backcon {
+    background-color: #92a8d1;
+    width: fit-content;
+    border-radius: 5px;
+}
+#srw {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    justify-content: space-around;
+    padding-left: 130px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    justify-content: space-around;
+    padding-left: 70px;
+    height: 50vh;
+    background-color: #92a8d1;
+    color: whitesmoke;
+}
+@media screen and (max-width : 500px) {
+    body {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    header {
+        position: sticky;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        max-width: 500px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav li {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+    }
+    leftnav{
+        position: relative;
+        float: center;
+    
+    }
+    .rightnav{
+        float: none;
+    }
+    img {
+        height: 250px;
+        width: 250px;
+    }
+    #featured {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    #retro {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    #concept {
+        height: auto;
+        width: 100vh;
+        display: ;
+    }
+    .img-div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #concept-text {
+        text-align: left;
+        color: gold;
+        
+    }
+    #srw {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+}
